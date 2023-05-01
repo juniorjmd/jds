@@ -1,0 +1,24 @@
+
+  <table border='1' id='tabla_1' style='margin-top:70px;'>
+  
+  <tr>
+  <td>codigo de barra</td>
+  <td>nombre</td>
+  <td>cantidad inicial</td>
+  <td>compra</td>
+  <td>ventas</td>
+  <td>devolucion</td>
+  <td>cantidad actual</td>
+  <td>nueva_cant_inicial</td>
+  <td>total_nuevo</td>
+  
+  </tr>
+<tr class='lineas'>		
+	<td>MV1</td><td>AZARBAN</td>
+	<td>4000</td> 
+	<td>0</td>
+	<td>0</td>
+	<td>0</td>
+	<td>4000</td>
+	<td>_________</td>
+	<td>_________</td></tr></table>

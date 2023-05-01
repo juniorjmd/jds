@@ -1,0 +1,94 @@
+cambios en compra...
+se agrega en la tabla de sucursal una bandera que identifique si cobras o no retenfuente
+ALTER TABLE `jkou_124569piokmd`.`sucursales` 
+ADD COLUMN `retefuente_aplica` CHAR NOT NULL DEFAULT 'N' AFTER `tip_regimen`;
+ALTER TABLE `jkou_124569piokmd`.`sucursales` 
+ADD COLUMN `base_retefuente` double NOT NULL DEFAULT 0 AFTER retefuente_aplica;
+
+se agrega el procedimiento insertaRetefuente.
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `insertaRetefuente`(
+ in _id_usuario varchar(50),
+ in _id_venta  varchar(50),
+in  _IVA double ,
+in _total_venta_bruta double ,
+in  _total_venta_neta double ,
+in _porcentaje_retefuente double )
+BEGIN
+set @tRF = 0;
+
+set @tRF = (_total_venta_neta * _porcentaje_retefuente)/100;
+
+insert into retefuente ( id_usuario, IVA, FECHA, total_venta_bruta, total_venta_neta, id_cierre_de_caja,id_venta,porcentaje_retefuente,totalRf)
+values (_id_usuario, _IVA, CURDATE(), _total_venta_bruta, _total_venta_neta, '', _id_venta,_porcentaje_retefuente, @tRF
+) ;
+
+END $$
+DELIMITER ;
+
+
+se agrega la tabla de registro de retefuente generada
+CREATE TABLE `retefuente` (
+  `id_retefuente` int(11) NOT NULL AUTO_INCREMENT,
+  id_venta  varchar(100) NOT NULL,
+  `id_usuario` varchar(100) NOT NULL,
+  `FECHA` date NOT NULL,
+  `total_venta_bruta` double NOT NULL,
+  `total_venta_neta` double NOT NULL,  
+  `porcentaje_retefuente` float,
+  `IVA` double NOT NULL,
+  `totalRf` double NOT NULL,
+  `id_cierre_de_caja` varchar(100) NOT NULL,
+  `estado` varchar(100) NOT NULL DEFAULT 'ACTIVO',
+  PRIMARY KEY (`id_retefuente`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+CREATE TABLE `retefuente_pagada` (
+  `id_retefuente` int(11) NOT NULL AUTO_INCREMENT,
+  id_venta  varchar(100) NOT NULL,
+  `id_usuario` varchar(100) NOT NULL,
+  `FECHA` date NOT NULL,
+  `total_venta_bruta` double NOT NULL,
+  `total_venta_neta` double NOT NULL,  
+  `porcentaje_retefuente` float,
+  `IVA` double NOT NULL,
+  `totalRf` double NOT NULL,
+  `id_cierre_de_caja` varchar(100) NOT NULL,
+  `estado` varchar(100) NOT NULL DEFAULT 'ACTIVO',
+  PRIMARY KEY (`id_retefuente`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+se modifica la tabla compras agregando el campo t_iva
+
+ALTER TABLE `jkou_124569piokmd`.`compras` 
+ADD COLUMN `t_iva` DOUBLE NOT NULL DEFAULT 0 AFTER `descuento`;
+
+
+se modifica la tabla listacompra agregando los campos iva , porcent_iva
+
+ALTER TABLE `jkou_124569piokmd`.`listacompra` 
+ADD COLUMN `iva` DOUBLE NULL DEFAULT 0 AFTER `usuario`,
+ADD COLUMN `porcent_iva` FLOAT NULL DEFAULT 0 AFTER `iva`,
+ADD COLUMN `valorsiva` DOUBLE NULL DEFAULT 0 AFTER `porcent_iva` ;
+
+
+se modifica la tabla listacompraedicion agregando los campos iva , porcent_iva
+ALTER TABLE `jkou_124569piokmd`.`listacompraedicion` 
+ADD COLUMN `iva` DOUBLE NULL DEFAULT 0 AFTER `usuario`,
+ADD COLUMN `porcent_iva` FLOAT NULL DEFAULT 0 AFTER `iva`, 
+ADD COLUMN `valorsiva` DOUBLE NULL DEFAULT 0 AFTER `porcent_iva` ;
+
+
+se modifica el archivo revisaLogin.php en la carpeta login
+se modifica el archivo compras, comprasEdit y mostrarDetalleFactura
+se modifica el archivo php/inicioFunction.php 
+se modifica el archivo invView.php
+
+
+
+anotacion // revisar cuentas por pagar, se esta generando bien, pero en la parte de las consultas de los 
+creditos no esta mostrando los resultados esperados.
+falta generacion del modulo de mostrar la retefuente generada.
+
+

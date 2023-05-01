@@ -1,0 +1,97 @@
+modificaciones para implementacion del codigo de barras
+se agrego a la tabla productos la columna barcode
+consulta-.
+
+ALTER TABLE `jkou_124569piokmd`.`producto` 
+ADD COLUMN `barcode` VARCHAR(200) NULL AFTER `imagen`;
+use jkou_124569piokmd;//nombre de la base de datos a utilizar
+SET SQL_SAFE_UPDATES = 0;
+update producto set barcode = idProducto ;
+
+---
+
+se agrego el barcode a la creacion de productos
+se agrego el barcode a la edicion de productos
+
+se genero el siguiente procedimiento
+
+USE `jkou_dmvl_distrimedicos`;
+DROP procedure IF EXISTS `buscaProducto`;
+
+DELIMITER $$
+USE `jkou_dmvl_distrimedicos`$$
+CREATE PROCEDURE `buscaProducto` (in id_producto varchar(100))
+BEGIN
+declare total int;
+select count(*) from producto where idProducto = id_producto into total;
+if total = 0 then 
+	select * from producto where barcode = id_producto ;
+else 
+	select * from producto where idProducto = id_producto ;
+end if;
+END$$
+
+DELIMITER ;
+
+-------------------------------------------
+se MODIFICO EL ARCHIVO db_listar_nuevo.php, punto_de_venta.ini.js ,index.php(en la carpeta de venta) y nFacturacion.php , listadoVentas.php 
+
+SE GENERO EL PROCEDIMIENTO busqueda_allproductplustotalsales el cual recibe el id de la busqueda y revisa en el id, en el codigo de barras y en las columnas de 
+nombre producto, nombre del grupo y el nombre de el laboratorio o la marca...
+
+
+DROP procedure IF EXISTS `busqueda_allproductplustotalsales`;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `busqueda_allproductplustotalsales`(
+in _dato_busqueda text 
+
+)
+BEGIN
+set @w = '';
+set @id_sh = '';
+set @like_sh = '';
+set @cantidad = 0;
+set @cantBarcode = 0;
+set @sql_exe='select * from allproductplustotalsales';
+if _dato_busqueda != '' then
+
+	select COUNT(*) from allproductplustotalsales WHERE idProducto = _dato_busqueda  INTO @cantidad;
+	if @cantidad = 0 then
+    select COUNT(*) from allproductplustotalsales  WHERE barcode = _dato_busqueda INTO @cantBarcode;
+		if @cantBarcode = 0 then
+			set @w = ' where ';
+            set @like_sh = concat('`nombre` LIKE ''%',_dato_busqueda,'%''  OR `Grupo`  LIKE  ''%',_dato_busqueda,'%''  OR  `idLab` LIKE ''%',_dato_busqueda,'%''');
+		else
+			set @w = ' where ';
+			set @id_sh = concat(' barcode = ''',_dato_busqueda ,'''');
+		end if;
+	else
+		set @w = ' where ';
+		set @id_sh = concat(' idProducto = ''',_dato_busqueda ,'''');
+    end if;
+    
+    
+    set @sql_exe =  concat(@sql_exe,@w,@id_sh,@like_sh,'  order by IDLINEA');
+    
+end if;
+SELECT @sql_exe;
+PREPARE insertar FROM @sql_exe;
+      EXECUTE insertar;
+ 
+END$$
+DELIMITER ;
+
+Se modifico la vista `allproductplustotalsales`
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` 
+SQL SECURITY DEFINER VIEW `allproductplustotalsales` AS (select `producto`.`IDLINEA` AS `IDLINEA`,`producto`.`idProducto` AS `idProducto`,`producto`.`idGrupo` AS `idGrupo`,`producto`.`Grupo` AS `Grupo`,`producto`.`idLab` AS `idLab`,`producto`.`laboratorio` AS `laboratorio`,`producto`.`nombre` AS `nombre`,`producto`.`precioVenta` AS `precioVenta`,`producto`.`PsIVA` AS `PsIVA`,`producto`.`IVA` AS `IVA`,`producto`.`porcent_iva` AS `porcent_iva`,`producto`.`precioCompra` AS `precioCompra`,`producto`.`cantInicial` AS `cantInicial`,`producto`.`cantActual` AS `cantActual`,`producto`.`compras` AS `compras`,`producto`.`ventas` AS `ventas`,`producto`.`stock` AS `stock`,`producto`.`imagen` AS `imagen`,(`producto`.`cantActual` * `producto`.`precioCompra`) AS `totalInventario`,`totalproducvendidos`.`totalVendido` AS `totalVendido`,(`producto`.`precioCompra` * `producto`.`ventas`) AS `costo`,(`totalproducvendidos`.`totalVendido` - (`producto`.`precioCompra` * `producto`.`ventas`)) AS `diferencia` from (`producto` left join `totalproducvendidos` on((`producto`.`idProducto` = `totalproducvendidos`.`idProducto`))));
+
+
+SE MODIFICARON LOS ARCHIVOS  inventario.php , invView.php
+
+
+queda pendiente la venta por combos...
+
+
+

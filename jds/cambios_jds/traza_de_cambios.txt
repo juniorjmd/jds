@@ -1,0 +1,90 @@
+## 28-05-2016 #jdp
+iniciamos la utilizacion de programacion orientada a objeto en el programa, poco a poco se irá migrando a un modelo mas ordenado MVC, la idea 
+es que toda la aplicacion cambie de paradigma.
+- creacion del modulo nuevo de impresion : printer_config .... 
+- se agrega al modulo de login, en el archivo de verificacion, "revisaLogin.php" los accesos a la base de datos 
+				$database     = trim($_POST[$auxNameDB]);
+				$galeria      = trim($_POST[$auxNamegaleria]);
+				$host         = trim($_POST[$auxHost]);
+				$clavedb	  = trim($_POST[$auxClavedb]);
+				$usuariodb	  = trim($_POST[$auxUsuariodb]);
+- en la tabla de modulos : mst_modulos se agregaron dos columnas, tip_impresion la cual llevara solo dos valores 'POS' para tipos de impresion por impresora tiquera,
+y  'P_L' para todos los demas tipos de impresora. La otra columna que se agrego fue cod_tip_impresion la cual hace referencia al codigo de la configuracion de 
+impresor que se debe tener en cuenta a la hora de imprimir, ya que una factura se puede imprimir en un modulo por punto de venta y en el otro en una impresora nomal. 
+- en donde se utiliza el archivo printer2.php se cambio la direccion a la carpeta jds\printer_config y en la base de datos en la tabla 
+- se añadio la clase printFactura.class.php la cual se extiende de la clase fpdf.php y se va a en cargar de generar un archivo pdf con la factura.
+- se añade printerNPOSctr.php que sera el controlador para traer los datos de configuracion de la impresion de la factura segun el modulo donde se eesta imprimiendo.
+- se añade la tabla de modelo de facturas
+
+	columnas
+		cod_configuracion
+		tip_configuracion = 'H','F','B'
+		tipo_elemento = ''
+		ubi_info = 
+		nomb_dato_ubi = 
+		seccion =  'D' - derecho - 'M' -'medio'- 'I' -izquierdo- 'IM' - 'DM' - 'IMD'. 
+		/*
+			dependiendo del tip_configuracion existiran diferentes secciones , tipos de elementos , diferentes tipos de ubicacion de la informacion 
+			y nombres de la informacion
+			
+			para tip_configuracion = 'H'
+			
+			INSERT INTO  `modelo_factura` (`cod_configuracion`,`tip_configuracion`,`tipo_elemento`,`ubi_info`,`nomb_dato_ubi`,`seccion`,`valorFijo`,`estado`)VALUES
+( 1,'H','img','file','../imagenes/logo/logo.jpg','I',''),
+( 1,'H','ln','valorFijo','','DM','DROGERIA'),
+( 1,'H','ln','var','sucursalNombre','DM',''),
+( 1,'H','ln','var','tel1','DM','TEL: '),
+( 1,'H','ln','var','nit_sucursal','DM','NIT : '),
+( 1,'H','ln','var','dir','DM',''),
+( 1,'H','ln','var','ciudad','DM',''),
+( 1,'H','ln','var','num_cod_resolucion','M','HABILITA RESOL. '),
+( 1,'H','ln','var','fec_resolucion','D',' - '),
+( 1,'H','ln','var','num_fac_inicial','DM','FACTURA DEL '),
+( 1,'H','ln','var','num_fac_final','DM',' AL ')
+
+,
+( 1,'H','ln','var','','DM',''),
+( 1,'H','ln','var','','DM',''),
+( 1,'H','ln','var','','DM',''),
+( 1,'H','ln','var','','DM',''),
+
+;
+
+			-----
+			tipo_elemento = 'img'
+			ubi_info = 'file'
+			nomb_dato_ubi = '../imagenes/logo/logo.jpg'//paht de la ubicacion del archivo de imagen
+			-------
+			tipo_elemento = 'ln'
+			ubi_info = 'var'
+			nomb_dato_ubi = 'nombre_variable'//este elemento esta ubicado en las variables de session y el nombre es el nombre de esa variable 
+			-------
+			
+			para tip_configuracion = 'B'
+			
+			
+			-------
+			tipo_elemento = 'ln'
+			ubi_info = 'db.tabla' //nombre de la tabla en la base de datos donde se trae la informacion
+			nomb_dato_ubi = 'nombre_columna'//este elemento esta ubicado en la base de datos y el nombre es el nombre de la columna  
+			-------
+			tipo_elemento = 'ln'
+			ubi_info = 'valorFijo' //nombre de la tabla en la base de datos donde se trae la informacion
+			nomb_dato_ubi = ''//este elemento esta ubicado en la base de datos y el nombre es el nombre de la columna  
+			-------
+		*/
+		valorFijo = ''
+		estado (A)
+		------------------
+		CREATE TABLE `jkou_124569piokmd`.`modelo_factura` (
+		  `cod_registro` INT NOT NULL AUTO_INCREMENT,
+		  `cod_configuracion` INT NOT NULL,
+		  `tip_configuracion` VARCHAR(1) NOT NULL,
+		  `tipo_elemento` VARCHAR(5) NOT NULL,
+		  `ubi_info` VARCHAR(45) NULL,
+		  `nomb_dato_ubi` VARCHAR(45) NULL,
+		  `seccion` VARCHAR(5) NOT NULL,
+		  `valorFijo` VARCHAR(150) NULL,
+		  `estado` VARCHAR(1) NOT NULL DEFAULT 'A',
+		  PRIMARY KEY (`cod_registro`));
+		

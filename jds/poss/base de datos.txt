@@ -1,0 +1,41 @@
+-- base de datos direcciones
+CREATE TABLE `clientes` (
+  `id_cliente` int(11) NOT NULL auto_increment,
+  `id_dir` int(11) NOT NULL,
+  `nombre` varchar(200) NOT NULL,
+  PRIMARY KEY  (`id_cliente`),
+  KEY `id_dir` (`id_dir`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+-- 
+-- Volcar la base de datos para la tabla `clientes`
+-- 
+
+INSERT INTO `clientes` VALUES (1, 2, 'jose dominguez');
+INSERT INTO `clientes` VALUES (2, 2, 'ulises fritz');
+INSERT INTO `clientes` VALUES (3, 2, 'jose zarate');
+INSERT INTO `clientes` VALUES (4, 3, 'betty padilla');
+INSERT INTO `clientes` VALUES (5, 4, 'juan gonzalez');
+INSERT INTO `clientes` VALUES (6, 4, 'pedro perez');
+
+-- --------------------------------------------------------
+
+-- 
+-- Estructura de tabla para la tabla `dir_descripcion`
+-- 
+
+CREATE TABLE `dir_descripcion` (
+  `id_dir` int(11) NOT NULL auto_increment,
+  `dir_fisica` varchar(200) NOT NULL,
+  `longitud` varchar(100) NOT NULL,
+  `latitud` varchar(100) NOT NULL,
+  PRIMARY KEY  (`id_dir`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+-- 
+-- Volcar la base de datos para la tabla `dir_descripcion`
+-- 
+
+INSERT INTO `dir_descripcion` VALUES (2, 'Calle 72 #54-1, Barranquilla, Barranquilla', '-74.80163060000001', '10.9990405');
+INSERT INTO `dir_descripcion` VALUES (3, 'Calle 53 #46-192, Barranquilla, Atlántico, Colombia', '-74.789199', '10.989428');
+INSERT INTO `dir_descripcion` VALUES (4, 'Calle 98 Cra. 52 – 115, Barranquilla, Atlántico, Colombia', '-74.82736', '11.01356');

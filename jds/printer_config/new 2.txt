@@ -1,0 +1,19 @@
+CREATE TABLE `modelo_factura` (
+  `cod_registro` int(11) NOT NULL AUTO_INCREMENT,
+  `cod_configuracion` int(11) NOT NULL,
+  `tip_configuracion` varchar(3) NOT NULL,
+  `tipo_elemento` varchar(5) NOT NULL,
+  `ubi_info` varchar(45) DEFAULT NULL,
+  `nomb_dato_ubi` varchar(45) DEFAULT NULL,
+  `seccion` varchar(5) NOT NULL,
+  `valorFijo` varchar(150) DEFAULT NULL,
+  `estado` varchar(1) NOT NULL DEFAULT 'A',
+  `altura` int(11) NOT NULL DEFAULT '6',
+  `posx` int(11) NOT NULL DEFAULT '0',
+  `posy` int(11) NOT NULL DEFAULT '0',
+  `aling` varchar(1) NOT NULL DEFAULT 'L',
+  `num_concatenados` int(11) NOT NULL DEFAULT '0',
+  `cambio_fsize` char(1) NOT NULL DEFAULT 'N',
+  `mod_celda` varchar(10) DEFAULT '2',
+  PRIMARY KEY (`cod_registro`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;

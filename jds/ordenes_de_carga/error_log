@@ -1,0 +1,27 @@
+[04-Jun-2020 09:07:01 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/php/db_conection.php on line 9
+[04-Jun-2020 09:07:01 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/facturar_remisiones.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/facturar_remisiones.php on line 25
+[04-Jun-2020 09:07:55 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/cerrar_orden_compra.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/cerrar_orden_compra.php on line 33
+[04-Jun-2020 09:10:00 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/cerrar_orden_compra.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/cerrar_orden_compra.php on line 33
+[09-Jun-2020 02:01:32 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/php/db_conection.php on line 9
+[09-Jun-2020 02:01:32 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/crear_orden_compra.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/crear_orden_compra.php on line 58
+[09-Jun-2020 02:01:32 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/php/db_conection.php on line 9
+[09-Jun-2020 02:01:32 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/crear_orden_compra.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/crear_orden_compra.php on line 58
+[02-Aug-2020 19:36:33 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/cerrar_orden_compra.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/ordenes_de_carga/cerrar_orden_compra.php on line 33

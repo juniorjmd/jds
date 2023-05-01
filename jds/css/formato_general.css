@@ -1,0 +1,46 @@
+ 
+.Estilo8, td.titulo {
+	font-family: "Arial Narrow";
+	font-size: 18px;
+	color: #993300;
+	font-weight: bold;
+}
+
+input.text, select.text, textarea.text , input.articulo, select.articulo, textarea.articulo {
+   background: #F5F5F5;
+   border: 1.5px solid #999999;
+   border-radius: 5px 5px 5px 5px;
+   color: #000000;
+   font-size: 13px;
+   padding: 5px;
+   width: 100%
+}
+.Estilo9 {
+	font-family: "Arial Narrow";
+	font-weight: bold;
+}
+
+td.label ,
+.Estilo12 {font-size: 17px; color: #993300; font-family: "Arial Narrow";}
+input.text1 {   background: #F5F5F5;
+   border: 1.5px solid #999999;
+   border-radius: 5px 5px 5px 5px;
+   color: #000000;
+   font-size: 13px;
+   padding: 5px;
+}
+select.text1 {   background: #F5F5F5;
+   border: 1.5px solid #999999;
+   border-radius: 5px 5px 5px 5px;
+   color: #000000;
+   font-size: 13px;
+   padding: 5px;
+}
+textarea.text1 {   background: #F5F5F5;
+   border: 1.5px solid #999999;
+   border-radius: 5px 5px 5px 5px;
+   color: #000000;
+   font-size: 13px;
+   padding: 5px;
+}
+ 

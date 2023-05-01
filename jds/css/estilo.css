@@ -1,0 +1,217 @@
+.button, .button:visited { /* botones genéricos */
+background: #222 url(http://sites.google.com/site/zavaletaster/Home/overlay.png) repeat-x;
+display: inline-block;
+padding: 5px 10px 6px;
+color: #FFF;
+text-decoration: none;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom: 1px solid rgba(0,0,0,0.25);
+position: relative;
+cursor:pointer;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+border: none;
+}
+
+.button:hover { /* el efecto hover */
+background-color: #111
+color: #FFF;
+}
+
+.button:active{ /* el efecto click */
+top: 1px;
+}
+
+/* botones pequeños */
+.small.button, .small.button:visited {
+font-size: 11px ;
+}
+
+/* botones medianos */
+.button, .button:visited,.medium.button, .medium.button:visited {
+font-size: 13px;
+font-weight: bold;
+line-height: 1;
+text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+
+/* botones grandes */
+.large.button, .large.button:visited {
+font-size:14px;
+padding: 8px 14px 9px;
+}
+
+/* botones extra grandes */
+.super.button, .super.button:visited {
+font-size: 34px;
+padding: 8px 14px 9px;
+}
+
+.pink.button { background-color: #E22092; }
+.pink.button:hover{ background-color: #C81E82; }
+
+.green.button, .green.button:visited { background-color: #91BD09; }
+.green.button:hover{ background-color: #749A02; }
+
+.red.button, .red.button:visited { background-color: #E62727; }
+.red.button:hover{ background-color: #CF2525; }
+
+.orange.button, .orange.button:visited { background-color: #FF5C00; }
+.orange.button:hover{ background-color: #D45500; }
+
+.blue.button, .blue.button:visited { background-color: #2981E4; }
+.blue.button:hover{ background-color: #2575CF; }
+
+.yellow.button, .yellow.button:visited { background-color: #FFB515; }
+.yellow.button:hover{ background-color: #FC9200; }
+.textoform{ font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+color:#707070;
+font-weight:bold;
+padding-left:20px;
+}
+.table {font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;}
+
+.boton {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+padding-left:5px;
+padding-right:5Px;
+font-weight:normal;
+color:#204814;
+background-color:#dddddd;
+border: 1px solid #666666;
+cursor:pointer;
+
+}
+
+.boton2{
+border: rgb(128,128,128) 1px dashed; 
+font-size: 10pt; 
+font-family: Verdana; 
+background-color: rgb(225,225,225)
+}
+
+.caja {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+border-style: solid;
+border-width:1px;
+border-color:black;
+font-weight:normal;
+padding-left:0px;
+background-color:#ffffff;
+}
+.caja1{
+border-style:solid;
+border-width:1px;
+border-color:#7f7f7f;
+background-color:#ffffff;
+padding-left:5px;
+padding-right:5px;
+}
+.caja2{
+margin: 0 5px 0 0;
+left: .2em;top:0;
+margin-top: -8px;
+padding-top: 5px;
+vertical-align: top;
+}
+.titulo{
+font-family:Verdana;
+font-size:12px;
+font-weight:bold;
+color:#000000;}
+
+.Estilo17 {font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 11px; }
+.Estilo18 {font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 12.5px; }
+.Estilo1 {font-family: "Courier New", Courier, monospace}
+.solapa {
+	width: 152px;
+	height: 19px;
+	background: url(imagenes/carpeta1.jpg) repeat;
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+	}
+	.btregister {
+margin-bottom:10px;
+margin-top:10px;
+text-align:center;
+top:auto
+}
+.bigbtn {
+background:url(../imagenes/carpeta1.JPG) repeat-x scroll left top ;
+border:#A70609 1px solid;
+color:#FFFFFF;
+cursor:pointer;
+font-family:Arial,Helvetica,sans-serif;
+font-size:20px !important;
+font-weight:normal !important;
+margin-bottom:10px;
+margin-top:8px;
+padding:6px 30px;
+text-align:center;}
+
+.menu_normal{
+border:1px  solid;
+border-color: #71D8E3;
+background-color: #FFFFFF;
+font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 13px; 
+cursor:pointer;
+}
+
+.menu_pas{
+border:1px  solid;
+border-color: #000000 ;
+background-color: #BEF1FC;
+font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 13px; 
+cursor:pointer;
+}
+
+.menu_click{
+border:1px  solid;
+border-color: #000000 ;
+background-color: #71D8E3;
+cursor:pointer;
+font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 13px; 
+}
+
+.nuevolink{cursor:pointer;
+font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 10px; 
+}
+.CitasRegistradas{cursor:pointer;
+font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 12px; 
+}
+.error{font-family: Arial, Helvetica, sans-serif; color: #CA445F; font-weight: bold; font-size: 10px; }
+
+.n_error{font-family: Arial, Helvetica, sans-serif; color:#0033FF; font-weight: bold; font-size: 10px; }
+
+.td_query{ 
+background-color:#71D8E3;
+ font-family: Arial, Helvetica, sans-serif; color: #000000; font-weight: bold; font-size: 13px; }
+
+.td_answer{
+border-color:#27A4E0;}
+
+.tr_regular{
+  border-color:#27A4E0;
+ }
+
+
+#framePrincipal{ min-height:600px}

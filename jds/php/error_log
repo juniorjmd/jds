@@ -1,0 +1,527 @@
+[18-Jan-2019 06:06:50 America/Bogota] PHP Notice:  Undefined variable: data in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 51
+[18-Jan-2019 06:15:29 America/Bogota] PHP Notice:  Undefined variable: respuesta in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 25
+[18-Jan-2019 06:15:29 America/Bogota] PHP Notice:  Undefined variable: data in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 57
+[18-Jan-2019 06:16:58 America/Bogota] PHP Notice:  Undefined variable: respuesta in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 26
+[18-Jan-2019 06:16:58 America/Bogota] PHP Notice:  Undefined variable: data in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 58
+[18-Jan-2019 06:17:58 America/Bogota] PHP Notice:  Undefined variable: respuesta in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 27
+[18-Jan-2019 06:17:58 America/Bogota] PHP Notice:  Undefined variable: data in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 59
+[18-Jan-2019 06:18:10 America/Bogota] PHP Notice:  Undefined variable: data in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 59
+[18-Jan-2019 06:18:16 America/Bogota] PHP Notice:  Undefined variable: data in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 58
+[18-Jan-2019 06:25:44 America/Bogota] PHP Notice:  Undefined index: dato in /home/madera/public_html/jds_maderas/jds/php/crea_id_ai.php on line 12
+[18-Jan-2019 06:25:44 America/Bogota] PHP Notice:  Undefined index: query2 in /home/madera/public_html/jds_maderas/jds/php/crea_id_ai.php on line 15
+[18-Jan-2019 06:25:44 America/Bogota] PHP Notice:  Undefined index: dato2 in /home/madera/public_html/jds_maderas/jds/php/crea_id_ai.php on line 18
+[18-Jan-2019 06:29:42 America/Bogota] PHP Notice:  Undefined index: dato in /home/madera/public_html/jds_maderas/jds/php/crea_id_ai.php on line 12
+[18-Jan-2019 06:29:42 America/Bogota] PHP Notice:  Undefined index: query2 in /home/madera/public_html/jds_maderas/jds/php/crea_id_ai.php on line 15
+[18-Jan-2019 06:29:42 America/Bogota] PHP Notice:  Undefined index: dato2 in /home/madera/public_html/jds_maderas/jds/php/crea_id_ai.php on line 18
+[18-Jan-2019 06:41:27 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function arrayReemplazaAcentos_utf8_decode() in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php:1281
+Stack trace:
+#0 [internal function]: {closure}(Array, 'datos')
+#1 /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php(1284): array_walk(Array, Object(Closure))
+#2 /home/madera/public_html/jds_maderas/jds/php/db_listar.php(62): hlp_arrayReemplazaAcentos_utf8_decode(Array)
+#3 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1281
+[18-Jan-2019 06:44:21 America/Bogota] PHP Notice:  Undefined variable: respuesta in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 25
+[18-Jan-2019 07:15:04 America/Bogota] PHP Notice:  Undefined variable: respuesta in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 25
+[18-Jan-2019 17:34:36 America/Bogota] PHP Notice:  Undefined index: access in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 832
+[18-Jan-2019 17:34:36 America/Bogota] PHP Notice:  Undefined index: database in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 4
+[18-Jan-2019 17:34:36 America/Bogota] PHP Notice:  Undefined index: host in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 6
+[18-Jan-2019 17:34:36 America/Bogota] PHP Notice:  Undefined index: clavedb in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 7
+[18-Jan-2019 17:34:36 America/Bogota] PHP Notice:  Undefined index: usuariodb in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 8
+[18-Jan-2019 17:34:36 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[18-Jan-2019 17:34:36 America/Bogota] PHP Notice:  Undefined variable: respuesta in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 25
+[18-Jan-2019 17:34:36 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jds_maderas/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_listar.php on line 49
+[18-Jan-2019 23:40:59 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1163
+[18-Jan-2019 23:42:23 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1163
+[18-Jan-2019 23:46:09 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1163
+[18-Jan-2019 23:46:52 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1163
+[18-Jan-2019 23:47:58 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1163
+[18-Jan-2019 23:48:29 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1163
+[18-Jan-2019 23:49:56 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1164
+[18-Jan-2019 23:53:22 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1165
+[18-Jan-2019 23:53:22 America/Bogota] PHP Parse error:  syntax error, unexpected ';', expecting '(' in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php(1168) : eval()'d code on line 1
+[18-Jan-2019 23:55:02 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1165
+[18-Jan-2019 23:55:02 America/Bogota] PHP Parse error:  syntax error, unexpected ';', expecting '(' in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php(1167) : eval()'d code on line 1
+[18-Jan-2019 23:55:38 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1165
+[18-Jan-2019 23:55:38 America/Bogota] PHP Parse error:  syntax error, unexpected '(Array)' (array) (T_ARRAY_CAST), expecting '(' in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php(1167) : eval()'d code on line 1
+[18-Jan-2019 23:56:14 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1166
+[18-Jan-2019 23:56:14 America/Bogota] PHP Parse error:  syntax error, unexpected ';', expecting '(' in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php(1168) : eval()'d code on line 1
+[18-Jan-2019 23:56:35 America/Bogota] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING), expecting ',' or ';' in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1165
+[18-Jan-2019 23:56:56 America/Bogota] PHP Notice:  Array to string conversion in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php on line 1167
+[18-Jan-2019 23:56:56 America/Bogota] PHP Parse error:  syntax error, unexpected ';', expecting '(' in /home/madera/public_html/jds_maderas/jds/php/inicioFunction.php(1169) : eval()'d code on line 1
+[26-Jan-2019 12:28:11 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:Prepared statement needs to be re-prepared in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:423
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 423
+[26-Jan-2019 12:41:48 America/Bogota] PHP Warning:  mysqli_stmt::close(): invalid object or resource mysqli_stmt
+ in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 485
+[26-Jan-2019 13:06:39 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined function hlp_utf8_string_array_encode() in /home/madera/public_html/jds_maderas/jds/php/db_listar_nuevo.php:123
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_listar_nuevo.php on line 123
+[26-Jan-2019 13:12:29 America/Bogota] PHP Fatal error:  Uncaught Exception: no se pudo insertar en bancos:Prepared statement needs to be re-prepared in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:477
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 477
+[26-Jan-2019 13:55:44 America/Bogota] PHP Warning:  PDOStatement::bindParam() expects at most 5 parameters, 8 given in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 318
+[26-Jan-2019 13:55:44 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 425
+[26-Jan-2019 13:55:44 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:441
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 441
+[26-Jan-2019 13:57:00 America/Bogota] PHP Warning:  PDOStatement::bindParam() expects at most 5 parameters, 8 given in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 318
+[26-Jan-2019 13:57:00 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 425
+[26-Jan-2019 13:57:00 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:441
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 441
+[26-Jan-2019 13:57:48 America/Bogota] PHP Warning:  PDOStatement::bindParam() expects at most 5 parameters, 8 given in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 318
+[26-Jan-2019 13:57:48 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 425
+[26-Jan-2019 13:57:48 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:441
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 441
+[26-Jan-2019 14:00:56 America/Bogota] PHP Warning:  PDOStatement::bindParam() expects at most 5 parameters, 8 given in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 318
+[26-Jan-2019 14:00:56 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 425
+[26-Jan-2019 14:00:56 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:441
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 441
+[26-Jan-2019 14:05:58 America/Bogota] PHP Warning:  PDOStatement::bindParam() expects at most 5 parameters, 8 given in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 318
+[26-Jan-2019 14:05:58 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 425
+[26-Jan-2019 14:05:58 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:441
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 441
+[26-Jan-2019 14:09:21 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 432
+[26-Jan-2019 14:09:21 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:448
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 448
+[26-Jan-2019 14:14:46 America/Bogota] PHP Warning:  PDOStatement::bindParam() expects at most 5 parameters, 8 given in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 319
+[26-Jan-2019 14:14:46 America/Bogota] PHP Warning:  PDOStatement::execute(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 446
+[26-Jan-2019 14:14:46 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jds_maderas/jds/php/db_carga.php:462
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/php/db_carga.php on line 462
+[28-Jan-2019 06:30:54 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[28-Jan-2019 06:30:54 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[28-Jan-2019 06:31:44 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[28-Jan-2019 06:31:44 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[29-Jan-2019 10:58:45 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[29-Jan-2019 10:58:45 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[29-Jan-2019 10:58:45 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[29-Jan-2019 10:58:45 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[29-Jan-2019 11:13:17 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[29-Jan-2019 11:13:17 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[29-Jan-2019 11:13:17 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[29-Jan-2019 11:13:17 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[29-Jan-2019 11:48:50 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[29-Jan-2019 11:48:50 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[29-Jan-2019 11:48:50 America/Bogota] PHP Notice:  Undefined index: nombre_reporte in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 3
+[29-Jan-2019 11:48:50 America/Bogota] PHP Notice:  Undefined index: datos_a_enviar in /home/madera/public_html/jds_maderas/jds/php/exportExcel.php on line 6
+[25-Mar-2019 12:17:46 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[30-Mar-2019 15:10:22 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[30-Mar-2019 15:11:35 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[30-Mar-2019 15:12:27 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[03-Apr-2019 14:26:28 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:48 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:48 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:50 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:50 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:50 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:51 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:51 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:51 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:51 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:51 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:51 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:52 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:52 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:52 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:52 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:52 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:52 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:52 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:52 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:52 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:52 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[03-Apr-2019 14:26:53 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[03-Apr-2019 14:26:53 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[05-Apr-2019 16:01:25 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[05-Apr-2019 16:01:25 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/crea_id_ai.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/crea_id_ai.php on line 25
+[06-Apr-2019 09:00:26 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[06-Apr-2019 09:03:34 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[09-Apr-2019 09:31:56 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:31:56 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:32:03 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:32:03 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:14 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:14 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:14 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:14 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:15 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:15 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:15 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:15 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:15 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:16 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:16 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:16 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:16 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:17 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:17 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:17 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:17 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:17 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:18 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:18 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:18 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:18 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:18 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:18 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:18 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:18 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:19 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:19 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:19 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:19 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:20 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:20 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:20 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:20 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:20 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:20 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:20 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:20 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:21 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:21 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:21 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:23 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:23 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[09-Apr-2019 09:35:23 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[09-Apr-2019 09:35:23 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[02-May-2019 15:05:22 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[02-May-2019 15:05:22 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/crea_id_ai.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/crea_id_ai.php on line 25
+[04-May-2019 08:47:15 America/Bogota] PHP Fatal error:  Uncaught Exception: No se pudo insertar:00000 in /home/madera/public_html/jdslt/jds/php/db_carga.php:470
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_carga.php on line 470
+[15-May-2019 17:01:04 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jdslt/jds/php/db_conection.php on line 9
+[15-May-2019 17:01:04 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on boolean in /home/madera/public_html/jdslt/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jdslt/jds/php/db_listar.php on line 49
+[15-Jul-2019 18:07:41 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_conection.php on line 9
+[15-Jul-2019 18:07:41 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php on line 109
+[15-Jul-2019 18:07:59 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_conection.php on line 9
+[15-Jul-2019 18:07:59 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php on line 109
+[15-Jul-2019 18:08:34 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_conection.php on line 9
+[15-Jul-2019 18:08:34 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php on line 109
+[16-Jul-2019 09:57:17 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_conection.php on line 9
+[16-Jul-2019 09:57:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_curinca/jds/php/db_listar_nuevo.php on line 109
+[26-Jul-2019 15:09:37 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[26-Jul-2019 15:09:37 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[26-Jul-2019 15:09:44 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[26-Jul-2019 15:09:44 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[26-Jul-2019 15:09:50 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[26-Jul-2019 15:09:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[26-Jul-2019 16:03:13 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[26-Jul-2019 16:03:13 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[26-Jul-2019 16:03:16 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[26-Jul-2019 16:03:16 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[22-Aug-2019 13:14:17 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[22-Aug-2019 13:14:17 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[22-Aug-2019 13:14:28 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[22-Aug-2019 13:14:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[22-Aug-2019 13:14:30 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[22-Aug-2019 13:14:30 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[22-Aug-2019 13:14:34 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[22-Aug-2019 13:14:34 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php on line 49
+[08-Sep-2019 19:23:05 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[08-Sep-2019 19:23:05 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:15:36 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:15:36 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:15:40 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:15:40 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:15:42 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:15:42 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:15:42 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:15:42 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:15:43 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:15:43 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:15:43 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:15:43 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[06-Mar-2020 16:16:00 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:16:00 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php on line 49
+[06-Mar-2020 16:16:12 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:16:12 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php on line 49
+[06-Mar-2020 16:16:15 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:16:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php on line 49
+[06-Mar-2020 16:16:15 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:16:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php on line 49
+[06-Mar-2020 16:16:15 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 16:16:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php:49
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar.php on line 49
+[06-Mar-2020 18:04:53 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_conection.php on line 9
+[06-Mar-2020 18:04:53 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php:109
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/jds_principal/jds/php/db_listar_nuevo.php on line 109
+[26-Jul-2020 22:18:09 America/Bogota] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user ''@'localhost' (using password: NO) in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/php/db_conection.php on line 9
+[26-Jul-2020 22:18:09 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function query() on bool in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/php/crea_id_ai.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/jdpsoluc/public_html/pagamenos/desarrollo/jds/php/crea_id_ai.php on line 25

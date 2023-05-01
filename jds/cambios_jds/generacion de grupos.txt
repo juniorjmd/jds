@@ -1,0 +1,117 @@
+se generaron 2 t
+grupos diferentes mas,los cuales se agregaran a la base de datos 
+
+SE AGREGAN 2 ARCHIVOS 
+grupo2.php
+grupo3.php
+se modifican los archivos de inventario.php
+crearproductos.php, editar.php, grupo.php y laboratorio.php
+
+CREATE TABLE `grupo2` (
+  `idGrupo` int(11) NOT NULL AUTO_INCREMENT,
+  `GRUPO` varchar(100) NOT NULL,
+  PRIMARY KEY (`idGrupo`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `grupo3` (
+  `idGrupo` int(11) NOT NULL AUTO_INCREMENT,
+  `GRUPO` varchar(100) NOT NULL,
+  PRIMARY KEY (`idGrupo`)
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
+
+
+ALTER TABLE  `producto` 
+ADD COLUMN `descripcion` TEXT NULL AFTER `barcode`,
+ADD COLUMN `subgrupo_1` VARCHAR(100) NOT NULL DEFAULT 0 AFTER `descripcion`,
+ADD COLUMN `nom_subgrupo_1` VARCHAR(100) NULL AFTER `subgrupo_1`,
+ADD COLUMN `subgrupo_2` VARCHAR(100) NOT NULL DEFAULT 0 AFTER `nom_subgrupo_1`,
+ADD COLUMN `nom_subgrupo_2` VARCHAR(100) NULL AFTER `sub_grupo2`;
+
+se modifica la vista allproductplustotalsales
+
+CREATE 
+    ALGORITHM = UNDEFINED 
+    DEFINER = `root`@`localhost` 
+    SQL SECURITY DEFINER
+VIEW `allproductplustotalsales` AS
+    (SELECT 
+        `producto`.`IDLINEA` AS `IDLINEA`,
+        `producto`.`idProducto` AS `idProducto`,
+        `producto`.`idGrupo` AS `idGrupo`,
+        `producto`.`Grupo` AS `Grupo`,
+        `producto`.`idLab` AS `idLab`,
+        `producto`.`laboratorio` AS `laboratorio`,
+        `producto`.`nombre` AS `nombre`,
+        `producto`.`precioVenta` AS `precioVenta`,
+        `producto`.`PsIVA` AS `PsIVA`,
+        `producto`.`IVA` AS `IVA`,
+        `producto`.`porcent_iva` AS `porcent_iva`,
+        `producto`.`precioCompra` AS `precioCompra`,
+        `producto`.`cantInicial` AS `cantInicial`,
+        `producto`.`cantActual` AS `cantActual`,
+        `producto`.`compras` AS `compras`,
+        `producto`.`ventas` AS `ventas`,
+        `producto`.`stock` AS `stock`,
+        `producto`.`imagen` AS `imagen`,
+        `producto`.`barcode` AS `barcode`,
+        `producto`.`subgrupo_1` AS `subgrupo_1`,
+        `producto`.`nom_subgrupo_1` AS `nom_subgrupo_1`,
+        `producto`.`subgrupo_2` AS `subgrupo_2`,
+        `producto`.`nom_subgrupo_2` AS `nom_subgrupo_2`,
+        `producto`.`descripcion` AS `descripcion`,
+        (`producto`.`cantActual` * `producto`.`precioCompra`) AS `totalInventario`,
+        `totalproducvendidos`.`totalVendido` AS `totalVendido`,
+        (`producto`.`precioCompra` * `producto`.`ventas`) AS `costo`,
+        (`totalproducvendidos`.`totalVendido` - (`producto`.`precioCompra` * `producto`.`ventas`)) AS `diferencia`
+    FROM
+        (`producto`
+        LEFT JOIN `totalproducvendidos` ON ((`producto`.`idProducto` = `totalproducvendidos`.`idProducto`))))
+
+
+
+se modifica el procedimiento
+DROP procedure IF EXISTS `busqueda_allproductplustotalsales`;
+
+DELIMITER $$
+USE `jkou_dmvl_distrimedicos`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `busqueda_allproductplustotalsales`(
+in _dato_busqueda text 
+
+)
+BEGIN
+set @w = '';
+set @id_sh = '';
+set @like_sh = '';
+set @cantidad = 0;
+set @cantBarcode = 0;
+set @sql_exe='select * from allproductplustotalsales';
+if _dato_busqueda != '' then
+
+	select COUNT(*) from allproductplustotalsales WHERE idProducto = _dato_busqueda  INTO @cantidad;
+	if @cantidad = 0 then
+    select COUNT(*) from allproductplustotalsales  WHERE barcode = _dato_busqueda INTO @cantBarcode;
+		if @cantBarcode = 0 then
+			set @w = ' where ';
+            set @like_sh = concat('`nombre` LIKE ''%',_dato_busqueda,'%''  OR `Grupo`  LIKE  ''%',_dato_busqueda,'%''  OR `descripcion`  LIKE  ''%',_dato_busqueda,'%''  OR `nom_subgrupo_1`  LIKE  ''%',_dato_busqueda,'%''  OR `nom_subgrupo_2`  LIKE  ''%',_dato_busqueda,'%''  OR  `laboratorio` LIKE ''%',_dato_busqueda,'%''');
+		else
+			set @w = ' where ';
+			set @id_sh = concat(' barcode = ''',_dato_busqueda ,'''');
+		end if;
+	else
+		set @w = ' where ';
+		set @id_sh = concat(' idProducto = ''',_dato_busqueda ,'''');
+    end if;
+    
+    
+    set @sql_exe =  concat(@sql_exe,@w,@id_sh,@like_sh,'  order by IDLINEA');
+    
+end if;
+-- SELECT @sql_exe;
+PREPARE insertar FROM @sql_exe;
+      EXECUTE insertar;
+ 
+END$$
+
+DELIMITER ;
+
+

@@ -1,0 +1,82 @@
+<?php
+session_start();
+   //Preguntamos si nuetro arreglo 'archivos' fue definido
+         if (isset ($_FILES["archivos"])) {
+
+
+if($_SESSION["tipoUsuario"]=='1'){
+$nombreCarpeta=$_SESSION["usuarioRevision"];
+}
+else{
+$nombreCarpeta=$_SESSION["usuario"];
+}
+$targetFolder = '\PedroContreras\galerias\\'.$nombreCarpeta.'\images'; // Relative to the root
+$verifyToken = md5('unique_salt' . $_POST['timestamp']);
+include 'db_conection.php';
+$conn= cargarBD();
+$mysqli = cargarBD();
+$query="SELECT * 
+FROM  galeria 
+ORDER BY  galeria.IdEntrada ASC";
+$result = $mysqli->query($query);
+$contaIN=0;
+ while ($row = $result->fetch_row()) {
+    $contaIN=  $row[2];
+	}
+	     //de se asi, para procesar los archivos subidos al servidor solo debemos recorrerlo
+         //obtenemos la cantidad de elementos que tiene el arreglo archivos
+         $tot = count($_FILES["archivos"]["name"]);
+         //este for recorre el arreglo
+         for ($i = 0; $i < $tot; $i++){
+         //con el indice $i, poemos obtener la propiedad que desemos de cada archivo
+         //para trabajar con este
+	$tempFile = $_FILES['archivos']['tmp_name'][$i];
+	$contaIN=$contaIN+1;
+	$targetPath = str_replace("/","\\",$_SERVER['DOCUMENT_ROOT']) . $targetFolder;
+	$targetFile = rtrim($targetPath,'\\') . '\\' .$nombreCarpeta.$contaIN;
+	$targetFolder2 = '\PedroContreras\galerias\\'.$nombreCarpeta.'\tooltips'; 
+	$aux1='galerias/'.$nombreCarpeta.'/tooltips'.'/'.$nombreCarpeta.$contaIN; 
+	$aux2='galerias/'.$nombreCarpeta.'/images'.'/'. $nombreCarpeta.$contaIN;
+	$targetPath2 = str_replace("/","\\",$_SERVER['DOCUMENT_ROOT']). $targetFolder2;
+	$newfile = rtrim($targetPath2,'\\') . '\\' . $nombreCarpeta.$contaIN;
+	// Validate the file type
+	$fileTypes = array('jpg','jpeg','gif','png','JPG'); // File extensions
+	$fileParts = pathinfo($_FILES['archivos']['name'][$i]);
+
+	 $tmp_name = $_FILES["archivos"]["tmp_name"][$i];
+            $name = $_FILES["archivos"]["name"][$i];
+  if (!file_exists($targetFile)) {if (in_array($fileParts['extension'],$fileTypes)){
+
+if(move_uploaded_file($tempFile,$targetFile)){
+		
+		if (copy($targetFile, $newfile)) {
+			require('class.image-resize.php');
+			$obj = new img_opt();
+			$obj->max_width(120);
+			$obj->max_height(120);
+			$obj->image_path($newfile);
+			$obj->image_resize();
+
+			$OBJ = new img_opt();
+			$OBJ->max_width(600);
+   			$OBJ->max_height(600);
+   			$OBJ->image_path($targetFile);
+   			$OBJ->image_resize();
+   			}
+
+
+
+$query="INSERT INTO galeria (rutaFoto, rutaMuestra, IdEntrada, idFoto, idCliente, titulo) VALUES ('".$aux2."', '".$aux1."', '".$contaIN."', '".$nombreCarpeta.$contaIN."', '".$nombreCarpeta."', '".$name."');";
+
+$mysqli->query($query);
+//echo $query;
+ echo("el archivo : <b>\"". $name ."\"</b>se cargo correctamente<br/> ");
+            
+}}else {
+		echo 'error al cargar el archivo <b>"'.$name.'," </b>Tipo de archivo es invalido. <br/>';
+	}}else{echo'el archivo<b>"'. $name.'" </b>ya se encuentra contenido en la carpeta <br/>';}
+
+
+            }
+      }
+?>

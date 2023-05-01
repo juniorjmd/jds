@@ -1,0 +1,50 @@
+[24-Jan-2019 15:06:07 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[24-Jan-2019 15:06:07 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[25-Jan-2019 05:47:10 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[25-Jan-2019 05:47:10 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[25-Jan-2019 05:51:07 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[25-Jan-2019 05:51:07 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[28-Jan-2019 07:59:28 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[28-Jan-2019 07:59:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[28-Jan-2019 14:05:34 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[28-Jan-2019 14:05:34 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[28-Jan-2019 14:19:15 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[28-Jan-2019 14:19:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[28-Jan-2019 16:16:39 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[28-Jan-2019 16:16:39 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[28-Jan-2019 19:17:23 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[28-Jan-2019 19:17:23 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[29-Jan-2019 09:18:05 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[29-Jan-2019 09:18:05 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6
+[04-Feb-2019 09:42:28 America/Bogota] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'madera'@'localhost' (using password: NO) in /home/madera/public_html/jds_maderas/jds/php/db_conection.php on line 9
+[04-Feb-2019 09:42:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function stmt_init() on boolean in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/madera/public_html/jds_maderas/jds/INVENTARIO/DATABASE/index.php on line 6

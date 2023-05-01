@@ -1,0 +1,14 @@
+ALTER TABLE `jds_mc_20180708`.`sucursales` 
+CHANGE COLUMN `retefuente_aplica_ventas` `retefuente_aplica_ventas` CHAR(1) NOT NULL DEFAULT 'N' ,
+CHANGE COLUMN `base_retefuente_venta` `base_retefuente_venta` DOUBLE NOT NULL DEFAULT '0' ,
+porcent_retefuente_venta;
+
+
+ALTER TABLE `jds_mc_20180708`.`ventas` 
+ADD COLUMN `porc_retefuente` FLOAT NULL DEFAULT '0' AFTER `fecha_entrega`,
+ADD COLUMN `retefuente` DOUBLE NULL DEFAULT '0' AFTER `porc_retefuente`;
+
+
+'retefuente_aplica_ventas'
+ 'base_retefuente_venta' 
+'porcent_retefuente_venta'

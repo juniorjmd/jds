@@ -1,0 +1,6 @@
+se debe realizar un controlador para permisosporsucursal.class
+en ese controlador debe existir un metodo que seleccione los permisos de acuerdo a los usuarios y devuelve el objeto 
+lleno de tipo permisosporsucursal
+
+el controlador permisosController.class debe ser generico que en el controlador debe llamar el procedimiento
+ dentro del controlador de permisosporsucursal que se encargara de llenar el objeto de la clase  permisosporsucursal 

@@ -1,0 +1,2 @@
+tip_identificacion, cod_identificacion, nombre, direccion, email, tel1, tel2, f_nacimiento, lugar_nacimiento;  
+1,32658900,'Betty Padilla de Dominguez','Calle 80c #14-45','juniorjmd@gmail.com',301789789,,1989-01-25,'Barranquilla';

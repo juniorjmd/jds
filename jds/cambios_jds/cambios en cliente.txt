@@ -1,0 +1,12 @@
+se cambio el id del cliente y el proveedor por el nit... se colocara la restriccion de que un cliente debe 
+ser unico en su nit...
+ALTER TABLE `proveedores` ADD UNIQUE(`nit`);
+ALTER TABLE `clientes` ADD UNIQUE(`nit`);
+
+SET SQL_SAFE_UPDATES = 0;
+update credito set `idCliente` = (select nit from proveedores WHERE proveedores.idCliente = credito.idCliente );
+update `compras` set `codPov` = (select nit from proveedores WHERE proveedores.idCliente = `codPov` );
+update cartera set `idCliente` = (select nit from clientes WHERE clientes.idCliente = cartera.idCliente );
+update ventacliente set `idCliente` = (select nit from clientes WHERE clientes.idCliente = ventacliente.idCliente );
+
+se modifica el modulo de ventas y el modulo de compras para agregar el nit como codigo unico de cliente.
